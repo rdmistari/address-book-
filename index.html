@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Address Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="containers">
+        <h1>Address Book</h1>
+        <div class="dis">
+             <button id="toggleButton">View All Contacts</button>
+        <button id="showButton">Add New Contact</button>
+    </div>
+        
+        <h2>Contacts</h2>
+        
+    </div>
+
+
+    <div class="container">
+        <h1>Address Book</h1>
+        <form id="addressForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="middleName" placeholder="Middle Name">
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="tel" id="mobile" placeholder="Mobile No" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="file" id="photo" accept="image/*" capture="environment" required>
+            <button idtype="submit">Add Contact</button>
+        </form>
+        <div id="contactList"  class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
